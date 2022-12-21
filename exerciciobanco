@@ -23,7 +23,39 @@ int registro ()
     fclose(file); //fecha o arquivo
 
     file = fopen(arquivo, "a");
+    fprintf(file,",");
+    fclose(file);
+
+    printf("Digite um nome a ser cadastrado: ");
+    scanf("%s",nome);
+
+    file = fopen(arquivo, "a");
+    fprintf(file,nome);
+    fclose(file);
     
+    file = fopen(arquivo, "a");
+    fprintf(file,",");
+    fclose(file);
+
+    printf("Digite o sobrenome a ser cadastrado: ");
+    scanf("%s", sobrenome);
+
+    file = fopen(arquivo, "a");
+    fprintf(file,sobrenome);
+    fclose(file);
+
+    file = fopen(arquivo, "a");
+    fprintf(file,",");
+    fclose(file);
+
+    printf("Digite o cargo a ser cadastrado: ");
+    scanf("%s", cargo);
+
+    file = fopen(arquivo, "a");
+    fprintf(file,cargo);
+    fclose(file);
+
+    system("pause");
 
 }
 
