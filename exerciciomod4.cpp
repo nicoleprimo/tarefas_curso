@@ -87,10 +87,6 @@ int consulta ()
     system("pause");
 }
 
-{
-    printf("Você escolheu a opção de consultar nomes\n");
-    system("pause");
-}
 
 int deletar ()
     
